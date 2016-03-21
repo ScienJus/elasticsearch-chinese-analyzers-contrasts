@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <script src="vue.js"></script>
+  <div id="app">
+    <h1>你输入的关键词是：{{ text }}</h1>
+    <input v-model="text"><button v-on:click="analyze">分析</button>
+    <ul v-for="result in results">
+      <h3>{{ result.key }}</h3>
+      <li v-for="token in result.tokens">
+        {{ token.token }}
+      </li>
+    </ul>
+    <!-- <pre>
+        {{results | json}}
+    </pre> -->
+  </div>
+
+  <script type="text/javascript">
+    var url = "http://localhost:9200/index/_analyze?analyzer="
+
+    new Vue({
+      el: '#app',
+      data: {
+        text: '测试文本',
+        analyzers: ['ik_smart', 'ik_max_word', 'ansj_query', 'ansj_index', 'mmseg_complex', 'mmseg_maxword', 'mmseg_simple'],
+        results: []
+      },
+      methods: {
+        analyze: function() {
+          var self = this
+          self.results = []
+          for (var i in self.analyzers) {
+            self.send(self.analyzers[i])
+          }
+        },
+        send: function(key) {
+          var xhr = new XMLHttpRequest()
+          var self = this
+          xhr.open('GET', url + key + '&text=' + self.text)
+          xhr.onload = function () {
+            var result = JSON.parse(xhr.responseText)
+            result.key = key
+            self.results.push(result)
+          }
+          xhr.send()
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
