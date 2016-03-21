@@ -1,0 +1,5 @@
+url: http://localhost:9200/analysis/_analyze?analyzer=${analyzer}&pretty=true&text=${text}
+analyzers: 
+    - ik_smart
+    - ik_max_word
+

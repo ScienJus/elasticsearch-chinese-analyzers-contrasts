@@ -1,0 +1,91 @@
+[2016-03-21 10:25:25,311][INFO ][node                     ] [Anything] version[1.7.1], pid[4023], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-03-21 10:25:25,311][INFO ][node                     ] [Anything] initializing ...
+[2016-03-21 10:25:25,498][INFO ][plugins                  ] [Anything] loaded [marvel, analysis-ik], sites [marvel]
+[2016-03-21 10:25:25,643][INFO ][env                      ] [Anything] using [1] data paths, mounts [[/home (/dev/mapper/centos-home)]], net usable_space [597.3gb], net total_space [681.2gb], types [xfs]
+[2016-03-21 10:25:28,514][INFO ][node                     ] [Anything] initialized
+[2016-03-21 10:25:28,514][INFO ][node                     ] [Anything] starting ...
+[2016-03-21 10:25:28,694][INFO ][transport                ] [Anything] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.222:9300]}
+[2016-03-21 10:25:28,710][INFO ][discovery                ] [Anything] elasticsearch/8mThLYUtRyePnyrJh_TBLw
+[2016-03-21 10:25:32,503][INFO ][cluster.service          ] [Anything] new_master [Anything][8mThLYUtRyePnyrJh_TBLw][localhost.localdomain][inet[/192.168.1.222:9300]], reason: zen-disco-join (elected_as_master)
+[2016-03-21 10:25:32,513][INFO ][http                     ] [Anything] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.222:9200]}
+[2016-03-21 10:25:32,513][INFO ][node                     ] [Anything] started
+[2016-03-21 10:25:32,610][INFO ][gateway                  ] [Anything] recovered [0] indices into cluster_state
+[2016-03-21 10:25:39,183][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2016-03-21 10:25:39,183][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2016-03-21 10:25:39,185][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2016-03-21 10:25:39,333][INFO ][cluster.metadata         ] [Anything] [.marvel-2016.03.21] creating index, cause [auto(bulk api)], templates [marvel], shards [1]/[1], mappings [indices_stats, cluster_stats, node_stats, shard_event, node_event, index_event, index_stats, _default_, cluster_state, cluster_event, routing_event]
+[2016-03-21 10:25:40,161][INFO ][cluster.metadata         ] [Anything] [.marvel-2016.03.21] update_mapping [node_stats] (dynamic)
+[2016-03-21 10:25:40,207][INFO ][cluster.metadata         ] [Anything] [.marvel-2016.03.21] update_mapping [index_event] (dynamic)
+[2016-03-21 10:25:40,213][INFO ][cluster.metadata         ] [Anything] [.marvel-2016.03.21] update_mapping [routing_event] (dynamic)
+[2016-03-21 10:25:40,218][INFO ][cluster.metadata         ] [Anything] [.marvel-2016.03.21] update_mapping [cluster_event] (dynamic)
+[2016-03-21 10:25:40,222][INFO ][cluster.metadata         ] [Anything] [.marvel-2016.03.21] update_mapping [cluster_state] (dynamic)
+[2016-03-21 10:25:40,225][INFO ][cluster.metadata         ] [Anything] [.marvel-2016.03.21] update_mapping [node_event] (dynamic)
+[2016-03-21 10:25:40,282][INFO ][cluster.metadata         ] [Anything] [.marvel-2016.03.21] update_mapping [index_stats] (dynamic)
+[2016-03-21 10:25:40,294][INFO ][cluster.metadata         ] [Anything] [.marvel-2016.03.21] update_mapping [indices_stats] (dynamic)
+[2016-03-21 10:25:40,343][INFO ][cluster.metadata         ] [Anything] [.marvel-2016.03.21] update_mapping [cluster_stats] (dynamic)
+[2016-03-21 10:27:09,392][INFO ][node                     ] [Anything] stopping ...
+[2016-03-21 10:27:09,791][INFO ][node                     ] [Anything] stopped
+[2016-03-21 10:27:09,791][INFO ][node                     ] [Anything] closing ...
+[2016-03-21 10:27:09,805][INFO ][node                     ] [Anything] closed
+[2016-03-21 10:27:12,192][INFO ][node                     ] [Sebastian Shaw] version[1.7.1], pid[4113], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-03-21 10:27:12,193][INFO ][node                     ] [Sebastian Shaw] initializing ...
+[2016-03-21 10:27:12,254][INFO ][plugins                  ] [Sebastian Shaw] loaded [marvel, analysis-ik], sites [marvel]
+[2016-03-21 10:27:12,278][INFO ][env                      ] [Sebastian Shaw] using [1] data paths, mounts [[/home (/dev/mapper/centos-home)]], net usable_space [597.3gb], net total_space [681.2gb], types [xfs]
+[2016-03-21 10:27:14,059][INFO ][node                     ] [Sebastian Shaw] initialized
+[2016-03-21 10:27:14,059][INFO ][node                     ] [Sebastian Shaw] starting ...
+[2016-03-21 10:27:14,097][INFO ][transport                ] [Sebastian Shaw] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.222:9300]}
+[2016-03-21 10:27:14,107][INFO ][discovery                ] [Sebastian Shaw] elasticsearch/9GQJb-37SnuGbbFIZGdHgA
+[2016-03-21 10:27:17,870][INFO ][cluster.service          ] [Sebastian Shaw] new_master [Sebastian Shaw][9GQJb-37SnuGbbFIZGdHgA][localhost.localdomain][inet[/192.168.1.222:9300]], reason: zen-disco-join (elected_as_master)
+[2016-03-21 10:27:17,905][INFO ][http                     ] [Sebastian Shaw] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.222:9200]}
+[2016-03-21 10:27:17,905][INFO ][node                     ] [Sebastian Shaw] started
+[2016-03-21 10:27:17,967][INFO ][gateway                  ] [Sebastian Shaw] recovered [1] indices into cluster_state
+[2016-03-21 10:27:18,262][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2016-03-21 10:27:18,263][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2016-03-21 10:27:18,264][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2016-03-21 10:27:24,950][INFO ][cluster.metadata         ] [Sebastian Shaw] [analysis] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2016-03-21 10:27:34,405][INFO ][cluster.metadata         ] [Sebastian Shaw] [.marvel-2016.03.21] update_mapping [index_event] (dynamic)
+[2016-03-21 10:30:26,281][INFO ][cluster.metadata         ] [Sebastian Shaw] [user] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [user]
+[2016-03-21 10:30:26,781][INFO ][cluster.metadata         ] [Sebastian Shaw] [user] update_mapping [user] (dynamic)
+[2016-03-21 10:30:58,708][DEBUG][action.admin.indices.analyze] [Sebastian Shaw] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@67f9722e]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik_smart]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$2.run(TransportSingleCustomOperationAction.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-21 10:31:05,647][DEBUG][action.admin.indices.analyze] [Sebastian Shaw] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@3473dd8]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik_max_word]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$2.run(TransportSingleCustomOperationAction.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-21 10:32:01,337][INFO ][action.admin.cluster.node.shutdown] [Sebastian Shaw] [cluster_shutdown]: requested, shutting down in [1s]
+[2016-03-21 10:32:02,338][INFO ][action.admin.cluster.node.shutdown] [Sebastian Shaw] [cluster_shutdown]: done shutting down all nodes except master, proceeding to master
+[2016-03-21 10:32:02,340][INFO ][action.admin.cluster.node.shutdown] [Sebastian Shaw] shutting down in [200ms]
+[2016-03-21 10:32:02,541][INFO ][action.admin.cluster.node.shutdown] [Sebastian Shaw] initiating requested shutdown...
+[2016-03-21 10:32:02,541][INFO ][node                     ] [Sebastian Shaw] stopping ...
+[2016-03-21 10:32:03,124][INFO ][node                     ] [Sebastian Shaw] stopped
+[2016-03-21 10:32:03,126][INFO ][node                     ] [Sebastian Shaw] closing ...
+[2016-03-21 10:32:03,129][INFO ][node                     ] [Sebastian Shaw] closed
+[2016-03-21 10:34:03,800][INFO ][node                     ] [Nebulon] version[1.7.1], pid[4299], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-03-21 10:34:03,801][INFO ][node                     ] [Nebulon] initializing ...
+[2016-03-21 10:34:03,865][INFO ][plugins                  ] [Nebulon] loaded [marvel, analysis-ik], sites [marvel]
+[2016-03-21 10:34:03,890][INFO ][env                      ] [Nebulon] using [1] data paths, mounts [[/home (/dev/mapper/centos-home)]], net usable_space [597.3gb], net total_space [681.2gb], types [xfs]
+[2016-03-21 10:34:05,710][INFO ][node                     ] [Nebulon] initialized
+[2016-03-21 10:34:05,710][INFO ][node                     ] [Nebulon] starting ...
+[2016-03-21 10:34:05,747][INFO ][transport                ] [Nebulon] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.222:9300]}
+[2016-03-21 10:34:05,756][INFO ][discovery                ] [Nebulon] elasticsearch/mKb8vtI0SEKYtbAa1w41bg
+[2016-03-21 10:34:09,518][INFO ][cluster.service          ] [Nebulon] new_master [Nebulon][mKb8vtI0SEKYtbAa1w41bg][localhost.localdomain][inet[/192.168.1.222:9300]], reason: zen-disco-join (elected_as_master)
+[2016-03-21 10:34:09,554][INFO ][http                     ] [Nebulon] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.222:9200]}
+[2016-03-21 10:34:09,555][INFO ][node                     ] [Nebulon] started
+[2016-03-21 10:34:09,624][INFO ][gateway                  ] [Nebulon] recovered [3] indices into cluster_state
+[2016-03-21 10:34:09,920][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2016-03-21 10:34:09,921][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2016-03-21 10:34:09,922][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2016-03-21 10:34:36,770][INFO ][node                     ] [Nebulon] stopping ...
+[2016-03-21 10:34:37,237][INFO ][node                     ] [Nebulon] stopped
+[2016-03-21 10:34:37,237][INFO ][node                     ] [Nebulon] closing ...
+[2016-03-21 10:34:37,240][INFO ][node                     ] [Nebulon] closed
