@@ -4,4 +4,7 @@ url: http://localhost:9200/analysis/_analyze?analyzer=${analyzer}&pretty=true&te
 analyzers: 
     - ik_smart
     - ik_max_word
+    - mmseg  #不知道为什么mmseg_maxword, mmseg_simple等效果一样，所以只配这一个
+    - ansj_query
+    - ansj_index
 
