@@ -399,3 +399,15 @@ index:
       ik_smart:
           type: ik
           use_smart: true
+      mmseg:
+          alias: [news_analyzer, mmseg_analyzer]
+          type: org.elasticsearch.index.analysis.MMsegAnalyzerProvider
+      mmseg_maxword:
+          type: mmseg
+          seg_type: "max_word"
+      mmseg_complex:
+          type: mmseg
+          seg_type: "complex"
+      mmseg_simple:
+          type: mmseg
+          seg_type: "simple"

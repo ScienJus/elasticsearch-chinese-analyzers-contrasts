@@ -89,3 +89,63 @@ org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer
 [2016-03-21 10:34:37,237][INFO ][node                     ] [Nebulon] stopped
 [2016-03-21 10:34:37,237][INFO ][node                     ] [Nebulon] closing ...
 [2016-03-21 10:34:37,240][INFO ][node                     ] [Nebulon] closed
+[2016-03-21 11:26:11,147][INFO ][node                     ] [Baron Zemo] version[1.7.1], pid[4864], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-03-21 11:26:11,148][INFO ][node                     ] [Baron Zemo] initializing ...
+[2016-03-21 11:26:11,214][INFO ][plugins                  ] [Baron Zemo] loaded [analysis-mmseg, marvel, analysis-ik], sites [marvel]
+[2016-03-21 11:26:11,240][INFO ][env                      ] [Baron Zemo] using [1] data paths, mounts [[/home (/dev/mapper/centos-home)]], net usable_space [597.3gb], net total_space [681.2gb], types [xfs]
+[2016-03-21 11:26:13,052][INFO ][node                     ] [Baron Zemo] initialized
+[2016-03-21 11:26:13,052][INFO ][node                     ] [Baron Zemo] starting ...
+[2016-03-21 11:26:13,089][INFO ][transport                ] [Baron Zemo] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.222:9300]}
+[2016-03-21 11:26:13,098][INFO ][discovery                ] [Baron Zemo] elasticsearch/8qyZDZFJTsGt1txZF5O85Q
+[2016-03-21 11:26:16,861][INFO ][cluster.service          ] [Baron Zemo] new_master [Baron Zemo][8qyZDZFJTsGt1txZF5O85Q][localhost.localdomain][inet[/192.168.1.222:9300]], reason: zen-disco-join (elected_as_master)
+[2016-03-21 11:26:16,895][INFO ][http                     ] [Baron Zemo] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.222:9200]}
+[2016-03-21 11:26:16,895][INFO ][node                     ] [Baron Zemo] started
+[2016-03-21 11:26:16,973][INFO ][gateway                  ] [Baron Zemo] recovered [3] indices into cluster_state
+[2016-03-21 11:26:17,292][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2016-03-21 11:26:17,292][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2016-03-21 11:26:17,294][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2016-03-21 11:26:17,340][INFO ][mmseg-analyzer           ] chars loaded time=44ms, line=12638, on file=chars.dic
+[2016-03-21 11:26:17,341][INFO ][mmseg-analyzer           ] words loaded time=0ms, line=4, on file=words-my.dic
+[2016-03-21 11:26:17,484][INFO ][mmseg-analyzer           ] words loaded time=143ms, line=157202, on file=words.dic
+[2016-03-21 11:26:17,484][INFO ][mmseg-analyzer           ] load all dic use time=188ms
+[2016-03-21 11:26:17,485][INFO ][mmseg-analyzer           ] unit loaded time=0ms, line=22, on file=units.dic
+[2016-03-21 11:28:54,156][DEBUG][action.admin.indices.analyze] [Baron Zemo] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@50426001]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [aaa]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$2.run(TransportSingleCustomOperationAction.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-21 11:31:04,498][INFO ][node                     ] [Baron Zemo] stopping ...
+[2016-03-21 11:31:04,804][INFO ][node                     ] [Baron Zemo] stopped
+[2016-03-21 11:31:04,806][INFO ][node                     ] [Baron Zemo] closing ...
+[2016-03-21 11:31:04,809][INFO ][node                     ] [Baron Zemo] closed
+[2016-03-21 11:34:57,523][INFO ][node                     ] [Alex Hayden] version[1.7.1], pid[5048], build[b88f43f/2015-07-29T09:54:16Z]
+[2016-03-21 11:34:57,523][INFO ][node                     ] [Alex Hayden] initializing ...
+[2016-03-21 11:34:57,589][INFO ][plugins                  ] [Alex Hayden] loaded [analysis-mmseg, marvel, analysis-ik], sites [marvel]
+[2016-03-21 11:34:57,615][INFO ][env                      ] [Alex Hayden] using [1] data paths, mounts [[/home (/dev/mapper/centos-home)]], net usable_space [597.3gb], net total_space [681.2gb], types [xfs]
+[2016-03-21 11:34:59,426][INFO ][node                     ] [Alex Hayden] initialized
+[2016-03-21 11:34:59,426][INFO ][node                     ] [Alex Hayden] starting ...
+[2016-03-21 11:34:59,462][INFO ][transport                ] [Alex Hayden] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.222:9300]}
+[2016-03-21 11:34:59,471][INFO ][discovery                ] [Alex Hayden] elasticsearch/yUCODiTUSha01_a5yWrXKQ
+[2016-03-21 11:35:03,233][INFO ][cluster.service          ] [Alex Hayden] new_master [Alex Hayden][yUCODiTUSha01_a5yWrXKQ][localhost.localdomain][inet[/192.168.1.222:9300]], reason: zen-disco-join (elected_as_master)
+[2016-03-21 11:35:03,267][INFO ][http                     ] [Alex Hayden] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.222:9200]}
+[2016-03-21 11:35:03,267][INFO ][node                     ] [Alex Hayden] started
+[2016-03-21 11:35:03,331][INFO ][gateway                  ] [Alex Hayden] recovered [3] indices into cluster_state
+[2016-03-21 11:35:03,640][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2016-03-21 11:35:03,640][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2016-03-21 11:35:03,642][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2016-03-21 11:35:03,685][INFO ][mmseg-analyzer           ] chars loaded time=41ms, line=12638, on file=chars.dic
+[2016-03-21 11:35:03,686][INFO ][mmseg-analyzer           ] words loaded time=0ms, line=4, on file=words-my.dic
+[2016-03-21 11:35:03,826][INFO ][mmseg-analyzer           ] words loaded time=140ms, line=157202, on file=words.dic
+[2016-03-21 11:35:03,826][INFO ][mmseg-analyzer           ] load all dic use time=182ms
+[2016-03-21 11:35:03,827][INFO ][mmseg-analyzer           ] unit loaded time=1ms, line=22, on file=units.dic
+[2016-03-21 11:44:10,355][INFO ][action.admin.cluster.node.shutdown] [Alex Hayden] [cluster_shutdown]: requested, shutting down in [1s]
+[2016-03-21 11:44:11,356][INFO ][action.admin.cluster.node.shutdown] [Alex Hayden] [cluster_shutdown]: done shutting down all nodes except master, proceeding to master
+[2016-03-21 11:44:11,358][INFO ][action.admin.cluster.node.shutdown] [Alex Hayden] shutting down in [200ms]
+[2016-03-21 11:44:11,559][INFO ][action.admin.cluster.node.shutdown] [Alex Hayden] initiating requested shutdown...
+[2016-03-21 11:44:11,559][INFO ][node                     ] [Alex Hayden] stopping ...
+[2016-03-21 11:44:11,971][INFO ][node                     ] [Alex Hayden] stopped
+[2016-03-21 11:44:11,971][INFO ][node                     ] [Alex Hayden] closing ...
+[2016-03-21 11:44:11,974][INFO ][node                     ] [Alex Hayden] closed
