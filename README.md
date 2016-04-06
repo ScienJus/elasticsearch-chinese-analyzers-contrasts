@@ -16,6 +16,14 @@ Elasticsearch中文分词插件分词效果对比（Ik、Ansj、Mmseg和Jieba）
 
 个人推荐顺序 Ik > Ansj > Mmseg
 
+如果你想实际尝试一下的话，可以Clone本项目，然后直接启动Elasticsearch：
+
+```
+./elasticsearch/bin/elasticsearch -d
+```
+
+然后将打开`index.html`就可以使用了。Elasticsearch都已经配置好了，包括Ajax跨域调用、分词的配置等。
+
 ==================
 
 可以在安装分词插件之前，先在这个网站上对比一下每个分词插件的效果，选择最合适的插件和模式，节约了自己安装和调试的时间。
